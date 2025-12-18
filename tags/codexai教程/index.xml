@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Hugo Site</title>
-    <link>https://Curry-ZCR.gitihub.io/post/</link>
+    <title>Codex，AI，教程 on My Hugo Site</title>
+    <link>https://Curry-ZCR.gitihub.io/tags/codexai%E6%95%99%E7%A8%8B/</link>
     <description>Recent content from My Hugo Site</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://Curry-ZCR.gitihub.io/post/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://Curry-ZCR.gitihub.io/tags/codexai%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -33,24 +33,6 @@
           
         
         <hr><p>本文2025-12-18首发于<a href='https://Curry-ZCR.gitihub.io/'>My Hugo Site</a>，最后修改于2025-12-18</p>]]>
-      </description>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Hello World</title>
-      <link>https://Curry-ZCR.gitihub.io/post/hello/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <author>z13869291731@163.com (Curry-zhang)</author>
-      <guid>https://Curry-ZCR.gitihub.io/post/hello/</guid>
-      <description>
-        <![CDATA[<h1>Hello World</h1><p>作者：Curry-zhang（z13869291731@163.com）</p>
-        
-          <p>💘 博麗 霊夢 💘</p>
-        
-        <hr><p>本文2023-03-15首发于<a href='https://Curry-ZCR.gitihub.io/'>My Hugo Site</a>，最后修改于2023-03-15</p>]]>
       </description>
       
     </item>

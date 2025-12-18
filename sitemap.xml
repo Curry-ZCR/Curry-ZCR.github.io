@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Curry-ZCR.gitihub.io/post/hello/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <loc>https://Curry-ZCR.gitihub.io/tags/codexai%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Curry-ZCR.gitihub.io/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Curry-ZCR.gitihub.io/tags/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Curry-ZCR.gitihub.io/post/windowscodex/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Curry-ZCR.gitihub.io/post/hello/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
     <loc>https://Curry-ZCR.gitihub.io/archives/</loc>
@@ -21,7 +30,5 @@
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
   </url><url>
     <loc>https://Curry-ZCR.gitihub.io/categories/</loc>
-  </url><url>
-    <loc>https://Curry-ZCR.gitihub.io/tags/</loc>
   </url>
 </urlset>
