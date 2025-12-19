@@ -30,7 +30,49 @@
       <description>
         <![CDATA[<h1>Windows配置codex</h1><p>作者：Curry-zhang（z13869291731@163.com）</p>
         
-          
+          <h1 id="切换到-镜像-mirrored-网络模式">
+<a class="header-anchor" href="#%e5%88%87%e6%8d%a2%e5%88%b0-%e9%95%9c%e5%83%8f-mirrored-%e7%bd%91%e7%bb%9c%e6%a8%a1%e5%bc%8f"></a>
+<strong>切换到 “镜像 (Mirrored)” 网络模式</strong>
+</h1><h2 id="1-在-windows-用户目录下例如-cusers你的用户名-创建或编辑文件-wslconfig-">
+<a class="header-anchor" href="#1-%e5%9c%a8-windows-%e7%94%a8%e6%88%b7%e7%9b%ae%e5%bd%95%e4%b8%8b%e4%be%8b%e5%a6%82-cusers%e4%bd%a0%e7%9a%84%e7%94%a8%e6%88%b7%e5%90%8d-%e5%88%9b%e5%bb%ba%e6%88%96%e7%bc%96%e8%be%91%e6%96%87%e4%bb%b6-wslconfig-"></a>
+1. 在 Windows 用户目录下（例如 C:\Users\你的用户名\ ）创建或编辑文件 .wslconfig 。
+</h2><h2 id="2-在文件中加入类似内容">
+<a class="header-anchor" href="#2-%e5%9c%a8%e6%96%87%e4%bb%b6%e4%b8%ad%e5%8a%a0%e5%85%a5%e7%b1%bb%e4%bc%bc%e5%86%85%e5%ae%b9"></a>
+2. 在文件中加入类似内容：
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>wsl2<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>experimental<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>networkingMode<span style="color:#f92672">=</span>mirrored
+</span></span><span style="display:flex;"><span>autoProxy<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>dnsTunneling<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>firewall<span style="color:#f92672">=</span>true
+</span></span></code></pre></div><h2 id="3-在-powershell-或命令提示符中执行">
+<a class="header-anchor" href="#3-%e5%9c%a8-powershell-%e6%88%96%e5%91%bd%e4%bb%a4%e6%8f%90%e7%a4%ba%e7%ac%a6%e4%b8%ad%e6%89%a7%e8%a1%8c"></a>
+3. 在 PowerShell 或命令提示符中执行：
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wsl --shutdown
+</span></span></code></pre></div><h2 id="4-重新启动-wsl比如打开-ubuntu-等发行版">
+<a class="header-anchor" href="#4-%e9%87%8d%e6%96%b0%e5%90%af%e5%8a%a8-wsl%e6%af%94%e5%a6%82%e6%89%93%e5%bc%80-ubuntu-%e7%ad%89%e5%8f%91%e8%a1%8c%e7%89%88"></a>
+4. 重新启动 WSL（比如打开 Ubuntu 等发行版）。
+</h2><h1 id="在wsl上安装codex">
+<a class="header-anchor" href="#%e5%9c%a8wsl%e4%b8%8a%e5%ae%89%e8%a3%85codex"></a>
+<strong>在wsl上安装codex</strong>
+</h1><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 下载并安装 nvm：</span>
+</span></span><span style="display:flex;"><span>curl -o- &lt;https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh&gt; | bash
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 代替重启 shell</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">\\</span>. <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.nvm/nvm.sh&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 下载并安装 Node.js：</span>
+</span></span><span style="display:flex;"><span>nvm install <span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 验证 Node.js 版本：</span>
+</span></span><span style="display:flex;"><span>node -v <span style="color:#75715e"># Should print &#34;v24.11.1&#34;.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 验证 npm 版本：</span>
+</span></span><span style="display:flex;"><span>npm -v <span style="color:#75715e"># Should print &#34;11.6.2&#34;.</span>
+</span></span></code></pre></div><h2 id="安装codex">
+<a class="header-anchor" href="#%e5%ae%89%e8%a3%85codex"></a>
+安装codex
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">npm</span> <span style="color:#960050;background-color:#1e0010">i</span> <span style="color:#960050;background-color:#1e0010">-g</span> <span style="color:#960050;background-color:#1e0010">@openai/codex</span>
+</span></span></code></pre></div><h2 id="在-wsl-模式下打开位于-windows-的文件夹">
+<a class="header-anchor" href="#%e5%9c%a8-wsl-%e6%a8%a1%e5%bc%8f%e4%b8%8b%e6%89%93%e5%bc%80%e4%bd%8d%e4%ba%8e-windows-%e7%9a%84%e6%96%87%e4%bb%b6%e5%a4%b9"></a>
+<strong>在 WSL 模式下打开位于 Windows 的文件夹</strong>
+</h2><p>如果你希望借助 WSL 的 Linux 环境（比如用 Linux shell、工具链、路径）同时项目文件存放在Windows，那么可以这样操作：</p>
         
         <hr><p>本文2025-12-18首发于<a href='https://Curry-ZCR.gitihub.io/'>My Hugo Site</a>，最后修改于2025-12-18</p>]]>
       </description>
